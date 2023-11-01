@@ -28,14 +28,26 @@ footer {
   padding: 20px;
   color: #fff;
   background-color: #3A4D39;
+  text-align: center;
 }
 
 h2 {
   color: #3A4D39;
+  text-align: center;
 }
 
-h3 {
-  color: #00a2c6;
+p {
+  margin: 10px auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+
+td {
+  border: none;
+  padding: 5px 10px;
 }
 
 #content {
@@ -76,30 +88,38 @@ h3 {
   padding: 20px;
 }
 
+.profile.card {
+  text-align: center;
+  margin: 20px;
+}
+
 .social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;
-  /* Menggunakan display flex untuk mengatur tautan dalam satu baris */
-  align-items: center;
-  /* Untuk mengatur vertikal tengah */
 }
 
 .social-links li {
-  margin-right: 10px;
+  text-align: center;
+  margin: 0;
 }
 
-.social-links a {
+.social-links li a {
   text-decoration: none;
-  color: #000000;
 }
 
-.social-links a:hover {
-  background-color: #3A4D39;
-  color: #ECE3CE;
-  font-weight: bold;
-  border-radius: 50;
+.social-links li a img:hover {
+  transform: scale(1.2); /* Membesarkan gambar saat cursor diarahkan */
+}
+
+.social-links li a img {
+  border-radius: 50%;
+  width: 100px;
+  max-width: 50px; /* Anda dapat menyesuaikan ukuran maksimum sesuai kebutuhan */
+  height: auto; /* Ini akan mempertahankan aspek rasio gambar */
+  margin-right: 10px; /* Jarak antara logo dan teks tautan */
 }
 
 @media screen and (max-width: 1200px) {
